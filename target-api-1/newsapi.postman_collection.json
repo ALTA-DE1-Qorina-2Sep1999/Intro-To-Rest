@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "946746a7-698d-4dee-90cd-087d0d6c59aa",
+		"name": "newsapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30192444"
+	},
+	"item": [
+		{
+			"name": "newsapi/All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=tesla&from=2023-09-04&sortBy=publishedAt&apiKey=52befcecc83944a1965d6ec3beffbce8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tesla"
+						},
+						{
+							"key": "from",
+							"value": "2023-09-04"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "52befcecc83944a1965d6ec3beffbce8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi/ Contains Apple",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Apple&from=2023-09-04&sortBy=popularity&apiKey=52befcecc83944a1965d6ec3beffbce8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Apple"
+						},
+						{
+							"key": "from",
+							"value": "2023-09-04"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "52befcecc83944a1965d6ec3beffbce8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi/HeadlineBBC",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?apiKey=52befcecc83944a1965d6ec3beffbce8&sources=bbc-news",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "52befcecc83944a1965d6ec3beffbce8"
+						},
+						{
+							"key": "sources",
+							"value": "bbc-news"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi/Contains Samsung",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Samsung&from=2023-09-04&sortBy=popularity&apiKey=52befcecc83944a1965d6ec3beffbce8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Samsung"
+						},
+						{
+							"key": "from",
+							"value": "2023-09-04"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "52befcecc83944a1965d6ec3beffbce8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi/Contains Sweden",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Sweden&from=2023-09-04&sortBy=popularity&apiKey=52befcecc83944a1965d6ec3beffbce8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Sweden"
+						},
+						{
+							"key": "from",
+							"value": "2023-09-04"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "52befcecc83944a1965d6ec3beffbce8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi/Contains 1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=1&from=2023-09-04&sortBy=popularity&apiKey=52befcecc83944a1965d6ec3beffbce8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "1"
+						},
+						{
+							"key": "from",
+							"value": "2023-09-04"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "52befcecc83944a1965d6ec3beffbce8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
